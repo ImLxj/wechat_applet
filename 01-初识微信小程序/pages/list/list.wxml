@@ -1,0 +1,74 @@
+<!--pages/list/list.wxml-->
+<!-- view标签的使用 -->
+<view class="container1">
+  <view>A</view>
+  <view>C</view>
+  <view>C</view>
+</view>
+
+<!-- 使用滚动条 -->
+<scroll-view class="container2" scroll-y>
+  <view>A</view>
+  <view>B</view>
+  <view>C</view>
+</scroll-view>
+
+<!-- 实现轮播图的效果 -->
+<!-- 
+  indicator-dots: 是否显示面板指示点,默认为false
+  indicator-color: 指示点颜色
+  indicator-active-color: 当前选中的指示点颜色
+  autoplay: 是否自动切换,默认为false
+  interva: 更该自动切换的时间,
+  circular: 是否采用衔接滑动,默认不采用
+ -->
+<swiper class="swiper-container" circular interval="1500" autoplay indicator-dots indicator-color="white" indicator-active-color="gray">
+  <!-- 第1个区域 -->
+  <swiper-item>
+    <view class="item">A</view>
+  </swiper-item>
+  <!-- 第2个区域 -->
+  <swiper-item>
+    <view class="item">B</view>
+  </swiper-item>
+  <!-- 第3个区域 -->
+  <swiper-item>
+    <view class="item">C</view>
+  </swiper-item>
+</swiper>
+
+<!-- 长按选中必须使用text标签,selectable属性是可以让text标签长按选中的，默认是false -->
+<view>
+  长按选中当前手机号
+  <text selectable>15206774444</text>
+</view>
+
+<!-- 将html标签渲染为小程序可用的,使用nodes属性可以进行渲染 -->
+<rich-text nodes="<h1 style='color:blue;'>标题</h1>"></rich-text>
+
+<!-- 按钮的使用 -->
+
+<!-- 通过type属性指定按钮颜色类型 -->
+<button>普通类型</button>
+<button type="primary">主色调类型</button>
+<button type="warn">警告类型</button>
+<!-- 通过size="mini" 将按钮的大小变小 -->
+<button size="mini">普通类型</button>
+<button type="primary" size="mini">主色调类型</button>
+<button type="warn" size="mini">警告类型</button>
+<!-- 通过 plain 属性可以将按钮变成镂空的 -->
+<button size="mini" plain>普通类型</button>
+<button type="primary" size="mini" plain>主色调类型</button>
+<button type="warn" size="mini" plain>警告类型</button>
+
+<!-- 图片标签的使用 默认情况下空的图片标签页会占据一定的空间 -->
+<image></image>
+<!-- 
+  image组件的mode属性用来指定图片的裁剪和缩放模式，常用的mode属性值如下
+  scaleToFill: 默认的缩放模式，不保持纵横比缩放图片，使图片的宽高完全拉伸至填满image元素。
+  aspectFit: 缩放模式，保持纵横比缩放图片，使图片的长边能完全显示出来，也就是说，可以完全的将图片显示出来
+  aspectFill: 缩放模式，保持纵横比缩放图片，只保证图片的短边能完全显示出来，也就是说，图片通常只能在水平或者垂直方向是完整的，另一个方向将会发生截取
+  widthFix: 缩放模式, 宽度不变，高度自动变化，保持原图宽高比不变
+  height: 缩放模式， 高度不变，宽度自动变化，保持原图宽高比不变。
+ -->
+<image src="/images/1.png" mode="aspectFill"></image>
