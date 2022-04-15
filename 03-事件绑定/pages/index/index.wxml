@@ -1,0 +1,24 @@
+<!-- 小程序常用的事件 -->
+<!-- 
+  tap: 
+    1. 绑定方式: bindtap 或 bind:tap。
+    2. 事件描述: 手指触摸后马上离开，类似于HTML中的click事件。
+  input: 
+    1. 绑定方式: bindinput 或 bind:input
+    2. 事件描述: 文本框的输入事件
+  change:
+    1. 绑定方式: bindchange 或 bind:change。
+    2. 事件描述: 状态改变时触发。
+ -->
+<button type="primary" bindtap="btnTapHandler">按钮</button>
+<!-- 加一按钮 -->
+<button type="primary" bindtap="countChange">点我加一:{{count}}</button>
+<!-- 给事件传递参数的方法
+  data-*="xxx"
+    * : 表示参数的名字
+    xxx: 表示参数的值 {{xxx}}表示数字 xxx表示字符串
+ -->
+<button type="primary" bindtap="sendParamsBtn" data-info="{{5}}">点我给事件传参</button>
+
+<!-- 绑定文本框输入事件 -->
+<input value="{{msg}}" bindinput="sendInputHandler" />

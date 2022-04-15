@@ -1,0 +1,6 @@
+input {
+  border: 1px solid lightpink;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 5px;
+}
