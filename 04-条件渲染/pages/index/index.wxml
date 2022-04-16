@@ -1,0 +1,24 @@
+<!-- 条件渲染 -->
+<!-- 使用wx:if="{{xxxx}}"来判断是否渲染该代码块 -->
+<view wx:if="{{type === 1}}">男</view>
+<view wx:elif="{{type === 2}}">女</view>
+<view wx:else>保密</view>
+
+<!-- block来控制多个组件的显示与隐藏，他没有实际的作用，只是起到了包裹性的作用
+      它也不会被页面渲染  
+ -->
+<block wx:if="{{false}}">
+  <view>我是被包裹起来的</view>
+  <view>我也是被包裹起来的</view>
+</block>
+
+<!-- hidden="{{xxx}}" 也能控制元素的显示与隐藏 -->
+<view hidden="{{type === 1}}">条件为 true 隐藏 条件为 false 显示</view>
+<!-- 
+  wx:if 是动态创建的元素,当条件为false的时候，没有当前的元素
+  hidden 是通过display来操作的元素,显示就是display="block" 隐藏就是display="none"
+
+  使用建议
+    1. 当需要频繁切换的时候建议使用hidden
+    2. 当控制条件复杂时，建议使用wx:if wx:elif wx:else进行展示的切换与隐藏
+ -->

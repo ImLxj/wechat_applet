@@ -1,0 +1,17 @@
+<!-- 列表渲染 -->
+<!-- wx:for="{{xxxx}}" index是索引 item是遍历到的每一项内容 -->
+<view wx:for="{{phone}}" wx:key="index">
+  当前索引为:{{index}},当前手机名字为:{{item}}
+</view>
+ 
+<!-- 自定义索引名字 -->
+<view>------------</view>
+<view wx:for="{{phone}}" wx:for-index="id" wx:for-item="itemName" wx:key="id">
+  当前索引为:{{id}},当前手机名字为:{{itemName}}
+</view>
+
+<!-- wx:key 类似vue当中的:key="xxx" -->
+<view>------------</view>
+<view wx:for="{{person}}" wx:key="id">
+  我的名字叫:{{item.name}}
+</view>
