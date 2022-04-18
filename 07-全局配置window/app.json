@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/dome/dome",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#2b4b6b",
+    "navigationBarTitleText": "全局配置windows",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#efefed"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,4 @@
+/* pages/home/home.wxss */
+button {
+  margin-bottom: 20rpx;
+}

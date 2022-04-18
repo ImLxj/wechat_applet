@@ -1,0 +1,4 @@
+<!--pages/home/home.wxml-->
+<view>主页</view>
+<button type="primary" bindtap="sendGet">发起GET请求</button>
+<button type="primary" bindtap="sendPost">发起POST请求</button>

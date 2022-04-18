@@ -1,0 +1,4 @@
+/* pages/dome/dome.wxss */
+.container1 {
+  text-align: center;
+}

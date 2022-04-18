@@ -1,8 +1,4 @@
 /**index.wxss**/
-/* 导入样式 */
-@import "/common/common.wxss";
-
-/* 下面的都是局部样式 */
 .userinfo {
   display: flex;
   flex-direction: column;
