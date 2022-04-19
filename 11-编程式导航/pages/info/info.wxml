@@ -1,0 +1,7 @@
+<!--pages/info/info.wxml-->
+<text>pages/info/info.wxml</text>
+<!-- 后退导航 -->
+<navigator open-type="navigateBack" delta="1">
+  返回上一级
+</navigator>
+<button bindtap="gotoBack">返回上一页</button>

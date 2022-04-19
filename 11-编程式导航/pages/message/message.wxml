@@ -1,0 +1,12 @@
+<!--pages/message/message.wxml-->
+<text>pages/message/message.wxml</text>
+<!-- 跳转到tabBar页面 -->
+<navigator url="/pages/contact/contact" open-type="switchTab">
+  跳转到联系我们
+</navigator>
+<!-- 跳转到非tabBar页面 -->
+<navigator url="/pages/info/info" open-type="navigate">
+  跳转到info页面
+</navigator>
+
+

@@ -1,0 +1,4 @@
+<!--pages/contact/contact.wxml-->
+<text>pages/contact/contact.wxml</text>
+<button bindtap="gotoMessage">跳转到消息页面</button>
+<button bindtap="gotoInfo">跳转到info页面</button>
